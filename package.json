@@ -18,12 +18,14 @@
     "@wordpress/scripts": "*",
     "axios": "^1.7.7",
     "jquery": "^3.7.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "sass-loader": "^16.0.4"
   },
   "devDependencies": {
     "@playwright/test": "^1.48.0",
     "prettier": "^3.3.3",
     "react-dom": "^18.3.1",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "webpack-dev-server": "^5.2.0"
   }
 }
