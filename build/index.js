@@ -244,7 +244,7 @@ class search {
       this.resultDiv.html(`
                 <h2 class="search-overlay__section-title">General Information</h2>
                 ${combinedResults.length ? '<ul class="link-list min-list">' : '<p>No General Information Matches That Search</p>'}
-                ${combinedResults.map(item => `<li><a href="${item.link}">${item.title.rendered}</a><li>`).join('')}
+                ${combinedResults.map(item => `<li><a href="${item.link}">${item.title.rendered}</a> ${item.type == 'post' ? `By ${item.authorName}` : ``} <li>`).join('')}
                 ${combinedResults.length ? '</ul>' : ''}
                 `);
       this.isSpinnerVisible = false;
