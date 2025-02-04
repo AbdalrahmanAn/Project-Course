@@ -44,7 +44,7 @@ class search {
 
     getResult() {
         $.when(
-            $.getJSON(universityData.root_url + '/wp-json/wp/v2/posts?search=' + this.searchField.val()),
+            $.getJSON(universityData.root_url + '/wp-jsonaa/wp/v2/posts?search=' + this.searchField.val()),
             $.getJSON(universityData.root_url + '/wp-json/wp/v2/pages?search=' + this.searchField.val()),
             $.getJSON(universityData.root_url + '/wp-json/wp/v2/program?search=' + this.searchField.val())
     ).then((posts, pages, programs) => {
